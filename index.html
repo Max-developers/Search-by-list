@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+  <head>  
+    <title>Search</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />   
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>       
+      $(document).on("click",".list", function(){  
+          var cursor_lis = $(this).html(); 
+          $(".input").val(cursor_lis);       
+          $(".wrapper_block").css("display","none"); 
+      });    
+    </script>
+  
+  </head>  
+  <body>
+    
+    <div class="container">
+      
+      <form action=''>      
+        <input type="text" placeholder="Search..." class="input">
+        <div class="search"></div>
+      </form>
+             
+      <div class="wrapper_block">
+        <div class="block"></div>      
+      </div>
+        
+    </div>
+  
+  </body>
+</html>
