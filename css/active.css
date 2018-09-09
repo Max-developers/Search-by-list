@@ -1,0 +1,39 @@
+
+.wrapper_block{ 
+  opacity:1;
+  transition: all 1s;
+}
+
+.block{ 
+  max-height:190px;
+}
+
+.container input{
+  width: 300px;
+  opacity: 1;
+  cursor: text !important;
+}
+
+.container  .search { 
+  right: -250px;
+  background: #004205;
+  z-index: 6;
+}
+
+.container  .search::before {  
+  top: 0;
+  left: 0;
+  width: 25px;
+}
+
+.container  .search::after { 
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  border: none;
+  background: white;
+  border-radius: 0%;
+  transform: rotate(-45deg);
+}
+
